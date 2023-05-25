@@ -18,24 +18,24 @@ const Contact = () => {
           <form
             action="https://getform.io/f/07a32f49-81ae-4b1f-8b38-ae6b03024294"
             method="POST"
-            className="flex flex-col w-full md:w-1/2">
+            className="flex flex-col w-full md:w-1/2 ">
             <input
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-[#BFA181] focus:outline-none"
+              className="p-2 bg-transparent border-2 border-[#BFA181] rounded-md text-[#BFA181] focus:outline-none"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-[#BFA181] focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 border-[#BFA181] rounded-md text-[#BFA181] focus:outline-none"
             />
             <textarea
               name="message"
               rows="10"
               placeholder="Enter your message"
-              className="p-2 bg-transparent border-2 rounded-md text-[#BFA181] focus:outline-none"></textarea>
+              className="p-2 bg-transparent border-2 border-[#BFA181] rounded-md text-[#BFA181] focus:outline-none"></textarea>
             <button className="text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 mt-6 mx-auto flex items-center rounded-md hover:scale110 duration-300">
               Let's talk
             </button>
