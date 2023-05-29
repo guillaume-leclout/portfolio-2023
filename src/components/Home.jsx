@@ -17,14 +17,8 @@ const Home = () => {
             After 13 years of experience and entrepreneurship in the tourism and
             hotel sector in Asia, I have chosen to reinvent myself
             professionally and embrace my passion: the tech industry.
-          </p>{' '}
-          <br />
-          <p className="text-[#BFA181] text-xl py-4 max-w-md">
-            I am currently studying to become a web developer at the Wild Code
-            School in Biarritz, and I am looking for a one-year work/study
-            training programme or a four-month internship starting in September
-            2023.
           </p>
+
           <div>
             <Link
               to="portfolio"
