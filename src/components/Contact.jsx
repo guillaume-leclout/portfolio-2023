@@ -22,12 +22,14 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              required
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 border-[#BFA181] rounded-md text-[#BFA181] focus:outline-none"
             />
             <input
               type="text"
               name="email"
+              required
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 border-[#BFA181] rounded-md text-[#BFA181] focus:outline-none"
             />
@@ -35,6 +37,7 @@ const Contact = () => {
               name="message"
               rows="10"
               placeholder="Enter your message"
+              required
               className="p-2 bg-transparent border-2 border-[#BFA181] rounded-md text-[#BFA181] focus:outline-none"></textarea>
             <button className="text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 mt-6 mx-auto flex items-center rounded-md hover:scale110 duration-300">
               Let's talk

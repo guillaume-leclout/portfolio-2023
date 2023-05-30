@@ -103,7 +103,7 @@ const Portfolio = () => {
           <p className="py-6 text-xl">Check out some of my work right here</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto,auto,1fr] gap-8 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-[auto,auto,1fr] gap-8 sm:px-0">
           {portfolios.map(
             ({ id, title, description, src, child, demo, code, origin }) => (
               <div
@@ -146,7 +146,7 @@ const Portfolio = () => {
                     </button>
                   ) : (
                     <a
-                      href={code}
+                      href={demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex justify-center w-1/2 px-6 py-3 m-4 duration-200 text-lg hover:scale-105 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-bold rounded-xl hover:duration-200">
