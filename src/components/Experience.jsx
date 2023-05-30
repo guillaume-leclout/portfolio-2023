@@ -144,9 +144,9 @@ const Experience = () => {
     <div
       name="experience"
       className="bg-gradient-to-b from-[#103a4b] via-[#103a4b] to-[#0A1828] w-full">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-[#BFA181]">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full  text-[#BFA181]">
         <div>
-          <p className="text-4xl font-bold border-b-2 border-cyan-500 p-2 inline">
+          <p className="text-4xl font-bold border-b-2 border-[#BFA181] p-2 inline">
             Experience
           </p>
           <p className="py-6 text-xl">
@@ -154,7 +154,7 @@ const Experience = () => {
           </p>
         </div>
         <h3 className="flex justify-center font-bold text-2xl  py-10">Stack</h3>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 sm:px-0">
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -168,7 +168,7 @@ const Experience = () => {
         <h3 className="flex justify-center font-bold text-2xl  py-10">
           Organisation tools
         </h3>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 sm:px-0">
           {organisation.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -185,7 +185,10 @@ const Experience = () => {
         <h3 className="flex justify-center font-bold text-2xl  py-10">
           Designing tools
         </h3>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 px-12 sm:px-0">
+        <div
+          className={
+            'w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 sm:px-0'
+          }>
           {design.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -199,7 +202,7 @@ const Experience = () => {
         <h3 className="flex justify-center font-bold text-2xl py-10">
           Marketing & E-commerce tools
         </h3>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center place-items-center py-8 sm:px-0">
           {ecommerce.map(({ id, src, title, style }) => (
             <div
               key={id}

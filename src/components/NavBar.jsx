@@ -29,10 +29,10 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-[#BFA181]  bg-gradient-to-b from-[#01161e] to-transparent fixed ">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-[#BFA181]  bg-gradient-to-b from-[#103a4b] via-[#0A1828] to-[#0A1828] relative ">
       <div>
         <Link to="home" smooth duration={1000}>
-          <h1 className="text-5xl font-signature ml-2 cursor-pointer">MrG</h1>
+          <h1 className="text-3xl font-signature ml-2 cursor-pointer">MrG</h1>
         </Link>
       </div>
       <ul className="hidden md:flex">

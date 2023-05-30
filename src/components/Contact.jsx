@@ -4,10 +4,10 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-[#0A1828] via-[#0A1828] to-[#103a4b] p-4 text-[#BFA181]">
+      className="w-full  bg-gradient-to-b from-[#0A1828] via-[#0A1828] to-[#103a4b] p-4 text-[#BFA181]">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-2 border-cyan-500">
+          <p className="text-4xl font-bold inline border-b-2 border-[#BFA181]">
             Wanna say hi ?
           </p>
           <p className="py-10 text-xl">

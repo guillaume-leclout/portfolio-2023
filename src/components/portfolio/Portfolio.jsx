@@ -95,30 +95,29 @@ const Portfolio = () => {
     <div
       name="portfolio"
       className="bg-gradient-to-b from-[#0A1828] via-[#0A1828] to-[#103a4b] w-full text-[#BFA181] py-8 ">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8">
-          <p className="text-4xl inline border-b-2 border-cyan-500 font-bold">
+          <p className="text-4xl inline border-b-2 border-[#BFA181] font-bold">
             My projects
           </p>
           <p className="py-6 text-xl">Check out some of my work right here</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto,auto,1fr] gap-8 px-12 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto,auto,1fr] gap-8 sm:px-0">
           {portfolios.map(
             ({ id, title, description, src, child, demo, code, origin }) => (
               <div
                 key={id}
-                className="grid grid-rows-[auto,auto,1fr]  py-4 hover:shadow-md hover:shadow-white hover:scale-105 hover:border-none duration-500 rounded-lg bg-gray-300 bg-opacity-5 border-2 border-cyan-500">
-                <p className="flex justify-center pt-6 pb-4 text-xl font-bold">
-                  {title}
-                </p>
-                <p className="flex justify-center text-lg pb-4 ">
-                  {description}
-                </p>
+                className="flex flex-col items-center justify-between py-4 px-4 hover:shadow-md hover:shadow-cyan-500 hover:scale-105 hover:border-none duration-500 rounded-lg bg-gray-300 bg-opacity-5 border-2 border-[#BFA181]">
+                <div className="h-[20%] text-center">
+                  <p className="pt-4 pb-2 text-2xl font-bold">{title}</p>
+                  <p className=" text-lg pb-4 ">{description}</p>
+                </div>
+
                 <img
                   src={src}
                   alt={title}
-                  className=" w-[85%] rounded-md mx-auto cursor-pointer"
+                  className=" h-[65%] rounded-md mx-auto w-[100%] cursor-pointer"
                   onClick={() => setModal(id)}
                 />
                 <div className="flex items-center justify-center">
@@ -126,10 +125,10 @@ const Portfolio = () => {
                     {child &&
                       child.map((item, index) => (
                         <div
-                          className="flex items-center justify-center px-6 py-2"
+                          className="flex items-center justify-center h-[30%] px-2 py-2"
                           key={index}>
                           <img
-                            className="max-w-full max-h-full"
+                            className=" max-w-full max-h-full"
                             src={item.icon}
                             alt={`Icon ${index}`}
                             style={{ width: item.size, height: item.size }}
@@ -138,7 +137,7 @@ const Portfolio = () => {
                       ))}
                   </div>
                 </div>
-                <div className="flex items-center justify-center">
+                <div className="flex h-[15%] items-center justify-center">
                   {title === 'Spotcast' ? (
                     <button
                       className="w-1/2 px-6 py-3 m-4 duration-200 text-lg hover:scale-105 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-bold rounded-xl hover:duration-200"
