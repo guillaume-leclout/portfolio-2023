@@ -8,17 +8,17 @@ const Modal = ({ title, src, demo, code, origin, closeModal }) => {
       <div
         className="bg-[#103a4b] rounded-lg p-8 flex flex-col items-center justify-center border-2 border-[#BFA181] w-[90%] h-[90%]"
         style={{ maxWidth: '600px' }}>
-        <h2 className="text-2xl font-bold mb-4 py-2">Project name: {title}</h2>
+        <h2 className="text-xl font-bold mb-4 py-2">Project name: {title}</h2>
         <img src={src} alt={title} className="w-[85%] rounded-lg py-4" />
-        <p className="text-lg py-2">{origin}</p>
-        <p className="text-lg py-2">
+        <p className="text-md py-2">{origin}</p>
+        <p className="text-md py-2">
           If you would like to know how it was built, you can find the code
           source here:
         </p>
         <a href={code} target="_blank" rel="noopener noreferrer">
           <FaGithub size={40} />
         </a>
-        <p className="text-lg py-2">And here is its deployment URL:</p>
+        <p className="text-md py-2">And here is its deployment URL:</p>
         <a href={demo} target="_blank" rel="noopener noreferrer">
           <TbWorldWww size={40} />
         </a>

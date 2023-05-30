@@ -146,17 +146,21 @@ const Portfolio = () => {
                       Demo
                     </button>
                   ) : (
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 text-lg hover:scale-105 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-bold rounded-xl hover:duration-200">
-                      <a href={demo} target="_blank" rel="noopener noreferrer">
-                        Demo
-                      </a>
-                    </button>
-                  )}
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-bold rounded-xl hover:duration-200">
-                    <a href={code} target="_blank" rel="noopener noreferrer">
-                      Code
+                    <a
+                      href={code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-center w-1/2 px-6 py-3 m-4 duration-200 text-lg hover:scale-105 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-bold rounded-xl hover:duration-200">
+                      <button>Demo</button>
                     </a>
-                  </button>
+                  )}
+                  <a
+                    href={code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center w-1/2 px-6 py-3 m-4 duration-200 text-lg hover:scale-105 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-bold rounded-xl hover:duration-200">
+                    <button>Code</button>
+                  </a>
                 </div>
               </div>
             )
